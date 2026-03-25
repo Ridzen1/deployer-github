@@ -1,5 +1,5 @@
 # --- CONFIGURATION OBLIGATOIRE ---
-base_url = "http://127.0.0.1:1111"
+base_url = "https://ridzen1.github.io/deployer-github/"
 
 # --- MÉTADONNÉES DU SITE ---
 title = "Agence Spatiale Zola"

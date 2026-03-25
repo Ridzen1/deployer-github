@@ -10,8 +10,7 @@
 
     <header class="main-header">
         <div class="container nav-inner">
-            <a href="/" class="logo">🚀 {{ config.title }}</a>
-                <nav>
+            <a href="{{ get_url(path="/") }}" class="logo">🚀 {{ config.title }}</a>                <nav>
                     <a href="{{ get_url(path="/") }}">QG</a>
                     <a href="{{ get_url(path="@/actu/_index.md") }}">Actualités</a>
                     <a href="{{ get_url(path="@/missions/_index.md") }}">Missions</a>

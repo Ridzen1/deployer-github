@@ -11,13 +11,13 @@
     <header class="main-header">
         <div class="container nav-inner">
             <a href="/" class="logo">🚀 {{ config.title }}</a>
-				<nav>
-					<a href="{{ get_url(path="/") }}">QG</a>
-					<a href="{{ get_url(path="actu") }}">Actualités</a>
-					<a href="{{ get_url(path="missions") }}">Missions</a>
-					<a href="{{ get_url(path="blog") }}">Blog</a> 
-					<a href="{{ get_url(path="equipe") }}">Équipage</a>
-				</nav>
+                <nav>
+                    <a href="{{ get_url(path="/") }}">QG</a>
+                    <a href="{{ get_url(path="@/actu/_index.md") }}">Actualités</a>
+                    <a href="{{ get_url(path="@/missions/_index.md") }}">Missions</a>
+                    <a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a>
+                    <a href="{{ get_url(path="@/equipe/_index.md") }}">Équipage</a>
+                </nav>
         </div>
     </header>
 

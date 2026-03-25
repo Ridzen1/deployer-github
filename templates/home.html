@@ -14,7 +14,7 @@
       {% for p in section_missions.pages %} 
         {% if p.extra.in_carousel | default(value=false) %}
           {% set bg_img = p.extra.cover_image | default(value="/images/avatar.jpg") %}
-          <div class="slide" style="min-width: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ bg_img }}') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div class="slide" style="min-width: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ get_url(path=bg_img) }}') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
             <span style="background: #e74c3c; padding: 5px 10px; border-radius: 4px; margin-bottom: 15px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Mission à la une</span>
             <h2 style="font-size: 3.5rem; margin: 0 0 10px 0;">{{ p.title }}</h2>
             <p style="font-size: 1.2rem; max-width: 600px;">{{ p.description | default(value="") }}</p>
@@ -46,7 +46,7 @@
         <article class="pro-card" style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
           <a href="{{ p.permalink }}" style="text-decoration: none; color: inherit;">
             {% set actu_img = p.extra.cover_image | default(value="/images/placeholder.jpg") %}
-            <div class="card-thumb" style="height: 180px; background: url('{{ actu_img }}') center/cover;"></div>
+            <div class="card-thumb" style="height: 180px; background: url('{{ get_url(path=actu_img) }}') center/cover;"></div>
             <div style="padding: 15px;">
               <small style="color: #888;">📅 {{ p.date }}</small>
               <h3 style="margin: 10px 0; font-size: 1.2rem;">{{ p.title }}</h3>
@@ -72,7 +72,7 @@
         <article class="pro-card" style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
           <a href="{{ p.permalink }}" style="text-decoration: none; color: inherit;">
             {% set thumb_img = p.extra.cover_image | default(value="") %}
-            <div class="card-thumb" style="height: 150px; background: url('{{ thumb_img }}') center/cover;"></div>
+            <div class="card-thumb" style="height: 150px; background: url('{% if thumb_img %}{{ get_url(path=thumb_img) }}{% endif %}') center/cover;"></div>
             <div style="padding: 15px;">
               <h3 style="margin: 0 0 10px 0; font-size: 1.2rem;">{{ p.title }}</h3>
               <p style="color: #666; font-size: 0.9rem; margin: 0;">
@@ -101,7 +101,7 @@
         <article class="pro-card" style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
           <a href="{{ p.permalink }}" style="text-decoration: none; color: inherit;">
             {% set blog_img = p.extra.cover_image | default(value="/images/placeholder.jpg") %}
-            <div class="card-thumb" style="height: 180px; background: url('{{ blog_img }}') center/cover;">
+            <div class="card-thumb" style="height: 180px; background: url('{{ get_url(path=blog_img) }}') center/cover;">
               {% if p.extra.category %}
               <span style="background: #34495e; color: white; padding: 3px 8px; font-size: 0.8rem; border-radius: 3px; margin: 10px; display: inline-block;">{{ p.extra.category }}</span>
               {% endif %}
@@ -133,7 +133,7 @@
       {% for p in section_equipe.pages %}
         <a href="{{ p.permalink }}" style="text-decoration: none; color: inherit; text-align: center; min-width: 150px;">
           {% set avatar_img = p.extra.cover_image | default(value="/images/avatar.jpg") %}
-          <img src="{{ avatar_img }}" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;">
+          <img src="{{ get_url(path=avatar_img) }}" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;">
           <h3 style="margin: 0; font-size: 1.1rem;">{{ p.title }}</h3>
           <span style="color: #e74c3c; font-size: 0.8rem; text-transform: uppercase; font-weight: bold;">{{ p.extra.role | default(value="Membre") }}</span>
         </a>

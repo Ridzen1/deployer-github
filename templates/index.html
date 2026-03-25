@@ -16,8 +16,9 @@
         {% for p in section.pages %}
         <article class="pro-card">
             <a href="{{ p.permalink }}">
+                {% set cover = p.extra.cover_image | default(value='/images/placeholder.jpg') %}
                 <div class="card-thumb"
-                    style="background-image: url('{{ p.extra.cover_image | default(value='/images/placeholder.jpg') }}')">
+                    style="background-image: url('{{ get_url(path=cover) }}')">
                     {% if p.extra.status %}
                     <span class="badge">{{ p.extra.status }}</span>
                     {% endif %}

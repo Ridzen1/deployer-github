@@ -5,7 +5,7 @@ description = "Les étapes essentielles pour nettoyer les panneaux solaires et v
 template = "page.html"
 
 [extra]
-cover_image = "/images/rover.jpg"
+cover_image = "images/rover.jpg"
 category = "Ingénierie"
 +++
 # Les défis de la poussière martienne

@@ -4,7 +4,7 @@ date = "2026-03-25"
 template = "page.html"
 
 [extra]
-cover_image = "/images/mars_craterejezero.jpg"
+cover_image = "images/mars_craterejezero.jpg"
 in_carousel = true
 +++
 # Cratere Jazero

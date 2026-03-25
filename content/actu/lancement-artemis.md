@@ -4,7 +4,7 @@ date = "2026-04-12"
 description = "La fusée SLS a décollé avec succès depuis Cap Canaveral, marquant une nouvelle ère."
 
 [extra]
-cover_image = "/images/artemis.webp"
+cover_image = "images/artemis.webp"
 status = "Succès"
 +++
 # Décollage réussi !

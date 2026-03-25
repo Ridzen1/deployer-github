@@ -5,7 +5,7 @@ template = "member.html"
 [extra]
 role = "Spécialiste de Mission & Géologue"
 email = "j.acaba@agence-spatiale.gov"
-cover_image = "/images/acaba-joseph.jpg"
+cover_image = "images/acaba-joseph.jpg"
 +++
 # Biographie
 

@@ -4,7 +4,7 @@ date = "2026-03-28"
 description = "Nos télescopes ont repéré une nouvelle planète rocheuse dans la zone habitable."
 
 [extra]
-cover_image = "/images/exoplanet.jpg"
+cover_image = "images/exoplanet.jpg"
 category = "Science"
 in_carousel = false
 +++

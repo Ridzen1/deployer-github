@@ -5,7 +5,7 @@ description = "Découvrez comment nos spécialistes se préparent psychologiquem
 template = "page.html"
 
 [extra]
-cover_image = "/images/astronaute.jpg"
+cover_image = "images/astronaute.jpg"
 category = "Équipage"
 +++
 # 18 mois de préparation intensive

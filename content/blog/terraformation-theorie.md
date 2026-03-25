@@ -5,7 +5,7 @@ description = "Nos chercheurs se penchent sur les modèles climatiques nécessai
 template = "page.html"
 
 [extra]
-cover_image = "/images/terraform.jpg"
+cover_image = "images/terraform.jpg"
 category = "Recherche"
 +++
 # Modifier un monde entier

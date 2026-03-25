@@ -1,0 +1,22 @@
+# --- CONFIGURATION OBLIGATOIRE ---
+base_url = "http://127.0.0.1:1111"
+
+# --- MÉTADONNÉES DU SITE ---
+title = "Agence Spatiale Zola"
+description = "Journal de bord de la mission Ares-X et maintenance orbitale."
+default_language = "fr"
+
+# --- MENU DE NAVIGATION ---
+# Ces liens seront utilisés par ton base.html
+
+[[extra.main_menu]]
+name = "QG"
+url = "/"
+
+[[extra.main_menu]]
+name = "Missions"
+url = "/missions"
+
+[[extra.main_menu]]
+name = "Équipage"
+url = "/equipe"

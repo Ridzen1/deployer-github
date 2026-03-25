@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="section-header">
+    <div class="container">
+        <h1>{{ section.title }}</h1>
+        <div class="section-desc">{{ section.content | safe }}</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="filter-bar">
+        <span>Trier par : Date</span>
+    </div>
+
+    <div class="card-grid">
+        {% for p in section.pages %}
+        <article class="pro-card">
+            <a href="{{ p.permalink }}">
+                <div class="card-thumb"
+                    style="background-image: url('{{ p.extra.cover_image | default(value='/images/placeholder.jpg') }}')">
+                    {% if p.extra.status %}
+                    <span class="badge">{{ p.extra.status }}</span>
+                    {% endif %}
+                </div>
+                <div class="card-content">
+                    <h3>{{ p.title }}</h3>
+                    <p>{{ p.description }}</p>
+                    <span class="read-more">Consulter la fiche →</span>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

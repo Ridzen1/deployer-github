@@ -37,7 +37,7 @@
 <div class="container" style="margin-top: 50px;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px;">
     <h2 style="margin: 0;">Dernières Actualités</h2>
-    <a href="/actu" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir tout →</a>
+    <a href="{{ get_url(path="actu") }}" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir tout →</a>
   </div>
 
   <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
@@ -92,7 +92,7 @@
 <div class="container" style="margin-top: 50px; padding-bottom: 50px;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px;">
     <h2 style="margin: 0;">Derniers articles du Blog</h2>
-    <a href="/blog" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir le blog →</a>
+    <a href="{{ get_url(path="blog") }}" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir le blog →</a>
   </div>
 
   <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
@@ -125,7 +125,7 @@
 <div class="container" style="margin-top: 50px; padding-bottom: 50px;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 30px;">
     <h2 style="margin: 0;">L'Équipage</h2>
-    <a href="/equipe" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir l'équipe →</a>
+    <a href="{{ get_url(path="equipe") }}" style="color: #3498db; text-decoration: none; font-weight: bold;">Voir l'équipe →</a>
   </div>
 
   <div style="display: flex; gap: 30px; overflow-x: auto; padding-bottom: 20px;">

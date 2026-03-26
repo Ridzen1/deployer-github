@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Spatiale Zola</title>
+    <link rel="stylesheet" href="https://ridzen1.github.io/deployer-github/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-inner">
+            <a href="https://ridzen1.github.io/deployer-github" class="logo">🚀 Agence Spatiale Zola</a>                <nav>
+                    <a href="https://ridzen1.github.io/deployer-github">QG</a>
+                    <a href="https://ridzen1.github.io/deployer-github/actu/">Actualités</a>
+                    <a href="https://ridzen1.github.io/deployer-github/missions/">Missions</a>
+                    <a href="https://ridzen1.github.io/deployer-github/blog/">Blog</a>
+                    <a href="https://ridzen1.github.io/deployer-github/equipe/">Équipage</a>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<article class="single-post">
+    
+    <header class="post-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://ridzen1.github.io/deployer-github/images/rover.jpg')">
+        <div class="container">
+            <nav class="breadcrumb"><a href="https://ridzen1.github.io/deployer-github">Accueil</a> / <a href="https://ridzen1.github.io/deployer-github/blog/_index.md">Section</a></nav>
+            <h1>Tutoriel : Maintenance d&#x27;un Rover en milieu hostile</h1>
+            <div class="post-meta">Publié le 2026-05-10</div>
+        </div>
+    </header>
+
+    <div class="container post-container">
+        <aside class="post-sidebar">
+            <div class="author-box">
+                <strong>Rédaction</strong>
+                <p>Équipe Agence Spatiale Zola</p>
+            </div>
+        </aside>
+        
+        <div class="post-content">
+            <h1 id="les-defis-de-la-poussiere-martienne">Les défis de la poussière martienne</h1>
+<p>Les tempêtes de sable sur Mars peuvent durer des semaines et recouvrir nos équipements d'une fine pellicule de poussière abrasive. La survie de nos rovers dépend d'un entretien rigoureux.</p>
+<h2 id="protocole-de-nettoyage-niveau-1">Protocole de nettoyage (Niveau 1)</h2>
+<p>Voici la procédure automatisée que nous lançons depuis le centre de contrôle :</p>
+<ol>
+<li><strong>Analyse des capteurs de luminosité :</strong> Vérifier la baisse de rendement énergétique.</li>
+<li><strong>Déploiement du bras robotique :</strong> Activer la brosse rotative à 50% de sa vitesse.</li>
+<li><strong>Balayage :</strong> Effectuer des mouvements horizontaux sur les panneaux solaires principaux.</li>
+</ol>
+<blockquote>
+<p>"Un rover propre est un rover qui vit. La poussière est notre pire ennemi sur le terrain." — <em>Dr. Aris, Ingénieur en Chef</em></p>
+</blockquote>
+<h3 id="script-d-auto-diagnostic">Script d'auto-diagnostic</h3>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def check_power_levels(solar_array):
+    if solar_array.efficiency &lt; 0.4:
+        trigger_cleaning_sequence()
+        return &quot;Warning: Dust level critical&quot;
+    return &quot;Power levels nominal&quot;
+</code></pre>
+
+        </div>
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Agence Spatiale Zola</strong></p>
+            <p>Journal de bord de la mission Ares-X et maintenance orbitale.</p>
+            <hr style="opacity: 0.1; margin: 20px 0;">
+            <p style="font-size: 0.8rem;">© 2026 - Agence Spatiale Zola</p>
+        </div>
+    </footer>
+
+</body>
+</html>
